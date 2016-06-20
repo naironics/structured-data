@@ -22,10 +22,10 @@
   [bottom-left top-right])
 
 (defn width [rectangle]
-  :-)
+   (let [ [[x1 y1] [x2 y2]] rectangle] (Math/abs (- x1 x2))))
 
 (defn height [rectangle]
-  :-)
+   (let [ [[x1 y1] [x2 y2]] rectangle] (Math/abs (- y1 y2))))
 
 (defn square? [rectangle]
   :-)
