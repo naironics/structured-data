@@ -33,7 +33,9 @@
      (= width height)))
 
 (defn area [rectangle]
-  :-)
+  (let [width  (width rectangle)
+        height (height rectangle)] 
+    (* width height)))
 
 (defn contains-point? [rectangle point]
   :-)
