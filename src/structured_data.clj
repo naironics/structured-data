@@ -28,7 +28,9 @@
    (let [ [[x1 y1] [x2 y2]] rectangle] (Math/abs (- y1 y2))))
 
 (defn square? [rectangle]
-  :-)
+   (let [width  (width  rectangle)
+         height (height rectangle) ]  
+     (= width height)))
 
 (defn area [rectangle]
   :-)
