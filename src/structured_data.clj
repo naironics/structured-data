@@ -47,7 +47,7 @@
      (and (contains-point? outer (get inner 0)) (contains-point? outer (get inner 1)))))
 
 (defn title-length [book]
-  :-)
+  (count (:title book)))
 
 (defn author-count [book]
   :-)
