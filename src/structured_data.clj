@@ -79,7 +79,9 @@
   (apply str (repeat n "*")))
 
 (defn toggle [a-set elem]
-  :-)
+  (cond
+    (contains? a-set elem) (disj a-set elem)
+    :else (conj a-set elem)))
 
 (defn contains-duplicates? [a-seq]
   :-)
