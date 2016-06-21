@@ -69,7 +69,8 @@
       (map get-second collection)))
 
 (defn titles [books]
-  :-)
+   (let [get-single-title (fn [book] (:title book))] 
+     (map get-single-title books)))
 
 (defn monotonic? [a-seq]
   :-)
