@@ -84,7 +84,9 @@
     :else (conj a-set elem)))
 
 (defn contains-duplicates? [a-seq]
-  :-)
+  (cond
+   (> (count a-seq) (count (set a-seq)))  true
+   :else false))
 
 (defn old-book->new-book [book]
   :-)
